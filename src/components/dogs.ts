@@ -3,6 +3,7 @@ import { Pet } from './pet';
 export class Dogs extends Pet {
   dogsOnomatopeia: string;
 
+  // eslint-disable-next-line max-params
   constructor(
     id: number,
     name: string,
