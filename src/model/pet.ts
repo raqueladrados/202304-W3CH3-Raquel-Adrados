@@ -14,11 +14,9 @@ export class Pet implements PetObject {
   id: number;
   isAdopted: boolean;
   owner: string;
-  species: string;
 
   // eslint-disable-next-line no-unused-vars
-  constructor(public name: string) {
-    this.species = '';
+  constructor(public name: string, public species: string) {
     this.id = Pet.randomId();
     this.isAdopted = true;
     this.owner = '';

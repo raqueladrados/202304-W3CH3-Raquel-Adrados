@@ -1,1 +1,2 @@
-import { Pet } from '../components/pet';
+import { Pet } from '../model/pet';
+import './style.css';
