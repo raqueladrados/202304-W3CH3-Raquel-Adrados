@@ -6,8 +6,8 @@
     "jest": true
   },
   "extends": ["xo", "prettier"],
+  "plugins": ["@typescript-eslint/eslint-plugin"],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["typescript-eslint/eslint-plugin", "prettier"],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
