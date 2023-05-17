@@ -1,22 +1,25 @@
-export class Pet {
-  id;
-  name;
-  species;
-  isAdopted;
-  owner;
+export type PetObject = {
+  id: number;
+  name: string;
+  species: string;
+  isAdopted: boolean;
+  owner: string;
+};
 
-  // eslint-disable-next-line max-params
-  constructor(
-    id: number,
-    name: string,
-    species: string,
-    isAdopted: boolean,
-    owner: string
-  ) {
-    this.id = id;
-    this.name = name;
-    this.species = species;
-    this.isAdopted = isAdopted;
-    this.owner = owner;
+export class Pet implements PetObject {
+  static randomId() {
+    return Math.random() * 1_000_000_000;
+  }
+
+  id: number;
+  isAdopted: boolean;
+  owner: string;
+  species: string;
+
+  constructor(public name: string) {
+    this.species = '';
+    this.id = Pet.randomId();
+    this.isAdopted = true;
+    this.owner = '';
   }
 }
