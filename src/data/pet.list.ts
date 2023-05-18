@@ -1,3 +1,4 @@
+/* eslint-disable no-new */
 import { Pet } from '../model/pet';
 
 export const getPetList = (): Pet[] => {
