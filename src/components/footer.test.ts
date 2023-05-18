@@ -6,6 +6,7 @@ describe('Given the component Footer', () => {
   document.body.innerHTML = '<section></section>';
 
   describe('When it receices <section></section>', () => {
+    // eslint-disable-next-line no-new
     new Footer('section', 'Pets');
 
     test('Then it should be in the document', () => {
